@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btn_Eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Buscar" />
+
     <EditText
         android:id="@+id/etn_Precio"
         android:layout_width="wrap_content"
@@ -18,11 +27,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_Descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/etn_Descripcion"
         app:layout_constraintVertical_bias="0.125" />
 
     <EditText
-        android:id="@+id/et_Descripcion"
+        android:id="@+id/etn_Descripcion"
         android:layout_width="292dp"
         android:layout_height="40dp"
         android:layout_marginTop="56dp"
@@ -72,5 +81,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etn_Precio"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_Modificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Eliminar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="76dp"
+        android:layout_height="74dp"
+        app:srcCompat="@android:drawable/ic_media_play"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="571dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
